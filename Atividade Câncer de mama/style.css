@@ -1,0 +1,15 @@
+body{
+    /*Selecionando por tag*/
+    background-color: #fdd9e3;
+    text-align: center;
+    /*alinhamento de texto: center, left, right, justify*/
+    
+}
+
+h1{
+    color: #D2449D;/*cor da letra*/
+}
+
+p{
+    text-align: justify;
+}

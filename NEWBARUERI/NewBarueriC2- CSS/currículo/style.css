@@ -1,0 +1,47 @@
+header{
+    text-align: center;/*alinhamento de texto*/
+    padding: 20px;
+    background-color: #d9b79A;
+}
+
+section{
+    text-align: center;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    margin: 0 auto;/*t-b r-l*/
+    padding: 20px;
+    background-color: #fff;
+
+}
+
+section h2{
+    color: #000;
+}
+
+ul{
+    list-style: none;/*Tirando a marcação da lista*/
+}
+
+section li{
+    margin: 5px 0;
+
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #d9b79A;
+    text-decoration: none;
+}
+
+.icones li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+

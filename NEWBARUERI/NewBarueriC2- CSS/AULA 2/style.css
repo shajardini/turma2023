@@ -1,0 +1,37 @@
+h1{
+    color:red;
+}
+
+h1:hover{
+    color: blue;
+    background-color: yellow;
+}
+
+input{
+    background-color: yellow;
+}
+
+input:focus{
+    background-color: green;
+}
+
+input::placeholder{
+    color: red;
+}
+
+p{
+    text-decoration-line: underline;   /*Linha de decoração( overline, none, line-throung, underline)*/
+    text-decoration-color: red;/*Cor da linha de decoração*/
+    text-decoration-style: dotted;/*Estilo da linha(solid, double, dotted, dashed*/
+    text-decoration-thickness: 3px;/*Espessura da linha*/
+
+    /*Shorthand
+        text-decoration: line color style thickness
+    
+    */
+
+    text-decoration: underline red dotted 1px;
+
+    text-transform: capitalize;/*Transformar o texto (uppercase, lowercase, capitalize)*/
+
+}

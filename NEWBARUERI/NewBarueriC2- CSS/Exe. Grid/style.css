@@ -1,0 +1,19 @@
+.container{
+    max-width: 1000px;
+    border: 2px double black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-areas: 
+        "imagem1 item2 item3"
+        "item4  item5 item6"
+        "item7 item8 item9"
+    ; */
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .item1{
+    grid-area: imagem1;
+} */

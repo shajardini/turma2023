@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*id(#), class(.), Tag(nomedatag)*/
+.container{
+    background-color: darkgray;
+    min-height: 100vh;/*viewport height*/
+    display: flex;
+    flex-direction: row;/* direção do flex - column, row, row-reverse, column-reverse*/
+    column-gap: 20px;/*Espaço entre as colunas*/
+    row-gap: 20px;/*espaçamento entre as linhas*/
+    justify-content: center;/*Quando a direção está como linha, ele faz o alinhamento na horizontal. Quando está como coluna, ele faz o alinhamento na vertical. (center, start, end, space-around, space-between, space-evenly)*/
+    align-items: center;/*Quando a direção está como linha, ele faz o alinhamento na vertical. Quando a direção está como coluna, ele faz o alinhamento na horizontal. (center, flex-start, flex-end, space-around, space-between, space-evenly)*/
+    flex-wrap: wrap;/*nowrap, wrap - quebra de linha*/
+
+
+}
+
+.item{
+    width: 200px;/*Largura*/
+    height: 200px;/*Altura*/
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;/*Tamanho da fonte*/
+    text-align: center;/*Alinhamento de texto*/
+    line-height: 200px;/*altura da linha*/
+
+}

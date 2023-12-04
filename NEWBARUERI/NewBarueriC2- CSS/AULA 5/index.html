@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsidade</title>
+    <style>
+        h1{
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+
+        img{
+            width: 600px;
+        }
+
+        @media(max-width: 600px){
+            h1{
+                background-color: red;
+            }
+
+            img{
+                width: 300px;
+            }
+        }
+
+        @media(min-width: 600px){
+            h1{
+                background-color: blue;
+            }
+
+            img{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsividade</h1>
+    <h2>Media Query </h2>
+    <img src="pexels-maria-isabella-bernotti-1049298.jpg" alt="Praia">
+    
+</body>
+</html>

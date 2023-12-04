@@ -1,0 +1,45 @@
+/*Selecionar os elementos - Tag, id, class*/
+
+/*Selecionando por tag*/
+p{
+    color: green;
+    
+}
+
+/*Selecionando por id 
+#id 
+
+*/
+
+#paragrafo-vermelho{
+    color: #F2387C;
+}
+
+/*Selecionando por class
+.nomedaclasse
+*/
+
+.paragrafo-laranja{
+    color: rgb(25, 0, 255);
+}
+
+body{
+    background-color: rgb(110, 210, 110);/*cor de fundo*/
+    background-image: url(lua.jpg);/*Imagem de fundo*/
+    background-repeat: no-repeat;/*repeat, no-repeat, repeat-x, repeat-y*/
+    background-size: 150px 180px;/*(x,y)*/
+    background-attachment: fixed;/*scroll, fixed*/
+    background-position: right top;/*(x,y) - center, left, right, bottom, top*/
+
+    /*shorthand - jeito curta, jeito abreviado
+
+    background: color image repeat attachment position
+    */
+
+    background: rgb(110, 210, 110) url(lua.jpg) no-repeat fixed right top;
+    background-size: 150px 180px;/*(x,y)*/
+
+
+
+    
+}

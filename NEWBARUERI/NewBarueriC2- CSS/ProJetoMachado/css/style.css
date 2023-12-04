@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #1A6E70;
+    --cor2: #7FEEF0;
+    --cor3: #37EAED;
+    --cor4: #306F70;
+    --cor5: #2BB8BA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*tag, id(#), class(.)*/
+body{
+    background-color: var(--cor1);
+    font-family: sans-serif;    
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor5));/*(direção que vai, cor inicial, cor final)*/
+    min-height: 130px;/*Altura mínima*/
+    text-align: center;
+    padding-top: 50px;/*Espaçamento dentro da caixa de 50px*/
+}
+
+header > h1{
+    color: black;
+    font-weight: bolder;/*Peso da fonte - 100 a 900, bold, bolder*/
+    margin-bottom: 20px;/*Espaço até o próximo elemento, no caso, inferior (Fora da caixa)*/
+}
+
+header > p{
+    color: black;
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 1px 1px 3px black;/*(x,y, extensão e cor*/
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;/*Sublinhado (none, overline, underline)*/
+    font-weight: bold;
+    border-radius: 3px;/*Arredondamento das vértices*/
+    transition-duration: 0.5s;/*Duração da transição para outro estado*/
+}
+
+nav > a:hover{/*pseudo-classe - adiciona um estado especial*/
+    background-color: var(--cor2);
+    
+}
+
+main{
+    background-color: #fff;
+    min-width: 320px;/*largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin: auto;/*Utilizado nesse contexto para centralizar o main*/
+    margin-top: 5px;
+    padding: 20px;/*Espaçamento interno do elemento*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 2px 5px 0px;/*Sombra de caixa*/
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 5px 0;/*tb rl*/
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;/*center, left, right, justify*/
+    text-indent: 30px;
+    margin: 15px 0;
+
+}
+
+img{
+    width: 30%;
+    border: 10px double black;/* shorthand border: espessura estilo cor*/
+
+}
+
+iframe{
+    width: 90%;
+    border: 10px double black;
+    margin-bottom: 20px;
+}
+
+figcaption{
+    font-size: 10px;
+}
+
+pre{
+   margin-bottom: 15px;
+   font-size: 14px;
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside > ul{
+    list-style-position: inside;/*Coloca os marcadores da lista dentro da caixa do elemento*/
+    text-align: justify;
+    padding-top: 10px;
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+    border-radius: 10px 10px 0 0;/*superior esquerdo - superior direito - inferior direito - inferior esquerdo*/
+
+}
+
+footer{
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

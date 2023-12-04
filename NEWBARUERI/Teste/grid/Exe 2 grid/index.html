@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Galeria de Imagens</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Definindo a altura do corpo como 100% da altura do navegador */
+}
+
+.gallery-container {
+    border: 2px solid #ccc; /* Adicionando uma borda à galeria */
+    padding: 20px; /* Espaço interno para melhor visualização */
+    height: 100%; /* A galeria ocupará 100% da altura do contêiner */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
+    gap: 20px; /* Espaço entre as imagens */
+    border: 4px dashed red;
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height: 100%; 
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaço extra sob as imagens */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="imagens/1.jpg" alt="Imagem 1">
+        <img src="imagens/2.jpg" alt="Imagem 2">
+        <img src="imagens/3.jpg" alt="Imagem 3">
+        <img src="imagens/4.jpeg" alt="Imagem 4">
+        <img src="imagens/5.jpeg" alt="Imagem 5">
+        <img src="imagens/6.jpg" alt="Imagem 6">
+    </div>
+</body>
+</html>

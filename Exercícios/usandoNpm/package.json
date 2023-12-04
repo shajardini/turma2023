@@ -1,0 +1,16 @@
+{
+  "name": "usandonpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shay",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "eslint": "^8.54.0",
+    "lodash": "^4.17.21"
+  }
+}

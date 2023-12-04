@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nome do aluno</h1>
+        <nav>
+            <a href="home.html">Minha trajetória</a>
+            <a href="#meus-planos">Meus Planos e Sonhos</a>
+            <a href="formulátio.html">Fale Comigo</a>
+        </nav>
+    </header>
+
+    <section>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Enviar</button>
+
+            <div id="errorMessages" class="error-message"></div>
+        </form>
+    </section>
+    <footer>
+        <p>Rodapé - © 2023</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var errorMessages = document.getElementById("errorMessages");
+
+            // Limpar mensagens de erro
+            errorMessages.innerHTML = "";
+
+            // Validar campos
+            if (name === "" || email === "" || message === "") {
+                errorMessages.innerHTML = "Todos os campos são obrigatórios.";
+                return;
+            }
+
+            // Aqui você pode adicionar lógica adicional, como validar o formato do email, etc.
+
+            // Se todos os campos estiverem preenchidos, você pode enviar o formulário (ou realizar outras ações)
+            alert("Formulário enviado com sucesso!");
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
+
+</body>
+
+</html>
